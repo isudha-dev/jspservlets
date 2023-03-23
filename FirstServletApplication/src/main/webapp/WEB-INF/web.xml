@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    
+    <welcome-file-list>
+        <welcome-file>myServlet</welcome-file>
+        <welcome-file>myGenericServlet</welcome-file>
+        <welcome-file>myHttpServlet</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>FirstServlet</servlet-name>
+        <servlet-class>com.app.firstservletapplication.servlets.FirstServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FirstServlet</servlet-name>
+        <url-pattern>/myServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FirstGenericServlet</servlet-name>
+        <servlet-class>com.app.firstservletapplication.servlets.FirstGenericServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FirstGenericServlet</servlet-name>
+        <url-pattern>/myGenericServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FirstHttpServlet</servlet-name>
+        <servlet-class>com.app.firstservletapplication.servlets.FirstHttpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FirstHttpServlet</servlet-name>
+        <url-pattern>/myHttpServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
